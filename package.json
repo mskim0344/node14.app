@@ -4,7 +4,9 @@
   "description": "노드웹공부",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "server": "nodemon ./index.js",
+    "front": "cd front && npm start",
+    "start": "concurrently --kill-others-on-fail \"npm run server\"\"npm run build\" "
   },
   "repository": {
     "type": "git",
