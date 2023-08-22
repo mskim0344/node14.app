@@ -5,7 +5,7 @@ const router = express.Router();
 
 //라우터
 router.get('/', (req, res)=>{
-  res.send('localhost:8000/ 라고 주소에 치셨군요asdfasdf')
+  res.send('localhost:8000/ 라고 주소에 치셨군요')
 });
 
 router.get('/sub', (req, res)=>{
